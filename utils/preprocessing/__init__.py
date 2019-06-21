@@ -1,3 +1,3 @@
-__all__ = ['SimplePreprocessor']
+__all__ = ['Preprocessor']
 
-from utils.preprocessing.simplepreprocessor import *
+from utils.preprocessing.preprocessor import *

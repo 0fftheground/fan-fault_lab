@@ -1,0 +1,32 @@
+# Runtime params
+#===================================
+train: False # train new or existing model for each channel
+
+#number of values to evaluate in each batch
+sample_size: 2048
+
+
+
+# LSTM parameters
+# ==================================
+optimizer: 'adam'
+validation_split: 0.2
+dropout: 0.3
+lstm_batch_size: 64
+layers: [64,32]
+
+#conv1D parameters
+# ==================================
+filters: [32,64]
+kernel_size: 4
+strides: 2
+activation: 'relu'
+max_pooling: 2
+
+# maximum number of epochs allowed (if early stopping criteria not met)
+epochs: 10
+
+# Number of consequetive training iterations to allow without decreasing the val_loss by at least min_delta
+patience: 10
+min_delta: 0.0003
+
